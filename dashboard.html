@@ -3,32 +3,91 @@
 <head>
   <meta charset="utf-8">
   <title>SpeakAbility</title>
-
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <a href="" class="header__logo">SpeakAbility</a>
-    <a href="" class="header__profile">
-      <img src="" alt="">
-      Имя Фамилия
-    </a>
-  </header>
-  <main class="quests">
-    <section class="quests__filters">
+    <div class="container clearfix">
+      <a href="#" class="header__logo">SpeakAbility</a>
+      <div class="header__profile">
+        <img src="static/img/profile-pic.png" alt="profile-pic" class="header__pic">
+        <span class="header__name">Anastasia</span>
+        <ul class="header__menu">
+          <li><a href="#">Выйти</a></li>
+        </ul>
+      </div>
+    </div>
+  </header><!-- header -->
 
-    </section>
-    <section class="quests--active">
+
+  <main class="container clearfix">
+    <!-- <section class="quests__filters">
+      пока не делаем
+    </section> -->
+
+    <section class="quests quests--active">
       <div class="quest quest--progress">
-        <span>20 min</span>
-        <h3>New York</h3>
-        <span class="progress">
-          
+        <span class="quest__time">20 min</span>
+        <h3 class="quest__title">New York</h3>
+        <span class="quest__progress">
+          <span class="quest__progress-bar"></span>
+        </span>
+      </div>
+
+      <div class="quest quest--new">
+        <span class="quest__time">20 min</span>
+        <h3 class="quest__title">London</h3>
+        <span class="quest__progress">
+          <span class="quest__progress-bar"></span>
+        </span>
+      </div>
+
+      <div class="quest quest--progress">
+        <span class="quest__time">20 min</span>
+        <h3 class="quest__title">New York</h3>
+        <span class="quest__progress">
+          <span class="quest__progress-bar"></span>
+        </span>
+      </div>
+
+      <div class="quest quest--new">
+        <span class="quest__time">20 min</span>
+        <h3 class="quest__title">London</h3>
+        <span class="quest__progress">
+          <span class="quest__progress-bar"></span>
+        </span>
+      </div>
+
+      <div class="quest quest--progress">
+        <span class="quest__time">20 min</span>
+        <h3 class="quest__title">New York</h3>
+        <span class="quest__progress">
+          <span class="quest__progress-bar"></span>
+        </span>
+      </div>
+
+      <div class="quest quest--new">
+        <span class="quest__time">20 min</span>
+        <h3 class="quest__title">London</h3>
+        <span class="quest__progress">
+          <span class="quest__progress-bar"></span>
         </span>
       </div>
     </section>
-    <section class="quests--completed">
 
+    <section class="quests quests--completed">
+      <h2 class="quests__title">Completed</h2>
+      <div class="quest quest--completed">
+        <span class="quest__time">20 min</span>
+        <h3 class="quest__title">Toronto</h3>
+        <span class="quest__progress">
+          <span class="quest__progress-bar"></span>
+        </span>
+      </div>
     </section>
-  </main>
+  </main><!-- container -->
+
 </body>
 </html>
