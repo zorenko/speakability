@@ -15,6 +15,10 @@ body {
   color: $text;
 }
 
+main {
+  padding-top: 30px;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -49,6 +53,9 @@ input {
 }
 
 .btn {
+  box-sizing: border-box;
+  border: 2px solid transparent;
+
   &:hover {
     color: $white;
   }
@@ -58,13 +65,13 @@ input {
   color: $white;
 
   &:hover {
-    background: $primary-hover;
+    background: $primary-hover
   }
 }
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid $primary;
+  border-color: $primary;
   color: $primary;
 
   &:hover {
@@ -79,9 +86,17 @@ input {
 
   &::after {
     position: absolute;
-    top: 0;
+    content: "";
+    top: 4.5px;
     left: 0;
+    width: 10px;
+    height: 14px;
+    background: url("../img/arrow-left.svg");
+    background-size: 10px 14px;
+  }
 
+  &:hover::after {
+    opacity: .5;
   }
 }
 

@@ -21,45 +21,48 @@
     align-items: center;
     justify-content: space-between;
     float: right;
-    padding: 10px 15px;
+    padding: 13px 15px;
     cursor: pointer;
   }
 
   &__pic {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   &__name {
     position: relative;
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 18px;
+    font-size: 14px;
+    color: $black;
 
     &::after {
       position: absolute;
       content: "";
-      top: 50%;
+      top: 7px;
       right: 0;
-      width: 11px;
-      height: 7px;
-      margin-top: -3px;
+      width: 10px;
+      height: 6px;
       background: url("../img/arrow-down.svg");
-      background-size: 11px 7px;
+      background-size: 10px 6px;
     }
   }
 
   &__menu {
     display: none;
     position: absolute;
-    bottom: -41px;
+    bottom: -39px;
     left: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: $shadow;
 
     li > a {
       display: block;
       padding: 10px 20px;
       background: $white;
+      font-size: 14px;
     }
   }
 

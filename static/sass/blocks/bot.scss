@@ -1,0 +1,20 @@
+.bot {
+  width: 600px;
+  border: 1px solid $grey-light;
+  border-radius: $radius;
+  background: $white;
+  margin: 0 auto;
+
+  &__pic {
+    min-height: 200px;
+    background: url("../img/bot-pic.png");
+    background-position: center;
+    background-size: 220px 180px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid $grey-light;
+  }
+
+  audio {
+    width: 100%;
+  }
+}
