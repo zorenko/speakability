@@ -6,13 +6,15 @@
   margin-right: 30px;
   margin-bottom: 30px;
   background: rgba($grey, .3);
-  box-shadow: 0 2px 7px 0 $grey-hover;
-  border-radius: 2.5px;
+  box-shadow: $shadow;
+  border-radius: $radius;
   color: $white;
   cursor: pointer;
+  box-sizing: border-box;
 
   &:hover {
     box-shadow: 0 2px 35px 0 rgba($grey, .25);
+    color: $white;
   }
 
   &__time {

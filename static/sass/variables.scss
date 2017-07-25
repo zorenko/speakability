@@ -3,28 +3,32 @@ $black: #38404A;
 $text: #616D7D;
 
 $primary: #328AFF;
-$primary-hover: rgba($primary, .15);
+$primary-hover: rgba($primary, .5);
 
 $secondary: #000;
-$secondary-hover: rgba($secondary, .15);
+$secondary-hover: rgba($secondary, .5);
 
 $info: #000;
-$info-hover: rgba($info, .15);
+$info-hover: rgba($info, .5);
 
 $success: #A0D16A;
-$success-hover: rgba($success, .15);
+$success-hover: rgba($success, .5);
 
 $warning: #FFB94B;
-$warning-hover: rgba($warning, .15);
+$warning-hover: rgba($warning, .5);
 
 $danger: #FF5F4D;
-$danger-hover: rgba($danger, .15);
+$danger-hover: rgba($danger, .5);
 
 $grey: #5A5A5A; //for buttons
-$grey-hover: rgba($grey, .15); //for buttons hover
+$grey-hover: rgba($grey, .5); //for buttons hover
 
 $grey-light: #eceef1; //for strokes
 $grey-text-dark: #5F5F5F;
 $grey-text-light: #B0B0B0;
 
 $body-bg: #f8f9fb;
+
+$radius: 2.5px;
+$shadow: 0 2px 10px 0 $grey-light;
+$padding: 10px 15px;
