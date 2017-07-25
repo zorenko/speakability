@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>SpeakAbility</title>
-  <link rel="stylesheet" href="static/css/normalize.css">
-  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/normalize.css">
+  <link rel="stylesheet" href="static/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="container clearfix">
       <a href="#" class="header__logo">SpeakAbility</a>
       <div class="header__profile">
-        <img src="static/img/profile-pic.svg" alt="profile-pic" class="header__pic"/>
+        <img src="static/images/profile-pic.svg" alt="profile-pic" class="header__pic"/>
         <span class="header__name">Anastasia</span>
         <ul class="header__menu">
           <li><a href="#">Выйти</a></li>
@@ -25,31 +25,34 @@
   <main class="container clearfix">
     <a href="#" class="link-back">back to the map</a>
 
-    <section class="bot">
-      <div class="bot__pic">
-        <picture>
-          <img src="" alt="">
-        </picture>
-      </div>
-      <div class="bot__player">
-        <audio controls>
-          <source src="horse.ogg" type="audio/ogg">
-          <source src="horse.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-        </audio>
-      </div>
-    </section>
-    <section class="hints">
-      <p class="hints__task">Ask for a place near the aisle</p>
-      <div class="hints__words">
-        <span>Use these words:</span>
-        <ul class="">
-          <li>aisle</li>
-          <li>seat</li>
-          <li>get</li>
-        </ul>
-      </div>
-    </section>
+    <section class="task">
+      <section class="bot">
+        <div class="bot__pic">
+          <picture>
+            <img src="" alt=""/>
+          </picture>
+        </div>
+        <div class="bot__player">
+          <audio controls>
+            <source src="" type="audio/ogg">
+            <source src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        </div>
+      </section><!-- bot -->
+
+      <section class="hints">
+        <p class="hints__task">Ask for a place near the aisle</p>
+        <div class="hints__words">
+          <span>Use these words:</span>
+          <ul class="">
+            <li>aisle</li>
+            <li>seat</li>
+            <li>get</li>
+          </ul>
+        </div>
+      </section><!-- hints -->
+    </section><!-- task -->
   </main><!-- container -->
 
 </body>
