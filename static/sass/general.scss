@@ -9,10 +9,21 @@
   margin: 0 auto;
 }
 
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
 body {
   background: $body-bg;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", "Roboto", sans-serif;
   color: $text;
+}
+
+h1, h2 {
+  font-family: "Arvo", "Montserrat", "Roboto", sans-serif;
 }
 
 main {
@@ -80,7 +91,7 @@ input {
   }
 }
 
-.btn-cta {
+.btn-mic {
   display: block;
   width: 55px;
   height: 55px;
@@ -122,6 +133,8 @@ input {
     opacity: .5;
   }
 }
+
+
 
 @media (min-width: 768px) {
   .container {

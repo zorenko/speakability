@@ -4,20 +4,28 @@
   <meta charset="utf-8">
   <title>SpeakAbility</title>
   <link rel="stylesheet" href="static/normalize.css">
-  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="static/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header header--app">
     <div class="container clearfix">
-      <a href="#" class="header__logo">SpeakAbility</a>
-      <div class="header__profile">
-        <img src="static/images/profile-pic.svg" alt="profile-pic" class="header__pic"/>
-        <span class="header__name">Anastasia</span>
-        <ul class="header__menu">
-          <li><a href="#">Выйти</a></li>
+      <nav class="header__nav header__nav--app">
+        <ul class="float-left">
+          <li><a href="#" class="header__logo">SpeakAbility</a></li>
+          <li><a href="#">Demo</a></li>
+          <li><a href="#">About</a></li>
         </ul>
-      </div>
+        <ul class="float-right header__profile">
+          <li>
+            <img src="static/images/profile-pic.svg" alt="profile-pic" class="header__pic"/>
+            <span class="header__name">Anastasia</span>
+            <ul class="header__menu">
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header><!-- header -->
 
