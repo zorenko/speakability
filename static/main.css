@@ -669,6 +669,7 @@ input {
       -webkit-animation-delay: .2s;
       animation-delay: .2s; }
     .lp-content__cards .card {
+      position: relative;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -687,9 +688,38 @@ input {
       width: 200px;
       height: 200px;
       border-radius: 4px;
-      background: #5A5A5A;
       margin: 10px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      background: #5A5A5A;
+      background-position: center;
+      background-size: cover;
+      z-index: 0; }
+      .lp-content__cards .card::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(37, 37, 37, 0.35);
+        border-radius: 4px;
+        z-index: -1; }
+      .lp-content__cards .card--cafe {
+        background-image: url("images/pic/card-cafe.jpg"); }
+      .lp-content__cards .card--bank {
+        background-image: url("images/pic/card-bank.jpg"); }
+      .lp-content__cards .card--museum {
+        background-image: url("images/pic/card-museum.jpg"); }
+      .lp-content__cards .card--sightseeing {
+        background-image: url("images/pic/card-sightseeing.jpg"); }
+      .lp-content__cards .card--airport {
+        background-image: url("images/pic/card-airport.jpg"); }
+      .lp-content__cards .card--apartment {
+        background-image: url("images/pic/card-apartment.jpg"); }
+      .lp-content__cards .card--concert {
+        background-image: url("images/pic/card-concert.jpg"); }
+      .lp-content__cards .card--subway {
+        background-image: url("images/pic/card-subway.jpg"); }
     .lp-content__cards .cards-col {
       animation: animationFrames linear 20s;
       animation-iteration-count: infinite;
