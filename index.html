@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="static/normalize.css">
   <link rel="stylesheet" href="static/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:200,300,400,500,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:200,300,400,500,700" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700|Podkova:400,600" rel="stylesheet">
 </head>
 <body>
   <header class="header header--lp">
@@ -14,8 +15,8 @@
       <nav class="header__nav header__nav--lp">
         <ul class="float-left">
           <li><a href="#" class="logo">SpeakAbility</a></li>
-          <li><a href="#">Demo</a></li>
-          <li><a href="#">About</a></li>
+          <!-- <li><a href="#">Demo</a></li>
+          <li><a href="#">About</a></li> -->
         </ul>
         <ul class="float-right">
           <li><a href="#">Sign in</a></li>
@@ -38,46 +39,86 @@
   <section class="lp-content lp-content--intro">
     <div class="container clearfix">
       <p>
-        SpeakAbility is an app created specifically for people with intermediate and upper-intermediate language levels to train their speaking skills
+        SpeakAbility is an app created specifically for people with intermediate and upper-intermediate language levels to train their speaking skills
       </p>
     </div><!-- container -->
   </section><!-- lp-content -->
 
-  <section class="lp-content lp-content--benefit">
+  <section class="lp-content lp-content--benefit lp-content--situations">
     <div class="container clearfix">
       <h2>Real-life situations</h2>
       <p>
         We use quests to help you dive into real-life situations, so the process is fun and interactive
       </p>
       <div class="lp-content__cards">
-        <div class="card">Cafe</div>
-        <div class="card">Bank</div>
-        <div class="card">Museum</div>
-        <div class="card">Sightseeing</div>
-        <div class="card">Airport</div>
-        <div class="card">Apartment</div>
-        <div class="card">Concert</div>
-        <div class="card">Subway</div>
-      </div>
+        <div class="cards-col">
+          <div class="card">Cafe</div>
+        </div>
+        <div class="cards-col">
+          <div class="card">Bank</div>
+          <div class="card">Museum</div>
+        </div>
+        <div class="cards-col">
+          <div class="card">Sightseeing</div>
+          <div class="card">Airport</div>
+        </div>
+        <div class="cards-col">
+          <div class="card">Apartment</div>
+          <div class="card">Concert</div>
+        </div>
+        <div class="cards-col">
+          <div class="card">Subway</div>
+        </div>
+      </div><!-- content__cards -->
     </div><!-- container -->
   </section><!-- lp-content -->
 
-  <section class="lp-content lp-content--benefit">
+  <section class="lp-content lp-content--benefit lp-content--feedback">
     <div class="container clearfix">
       <h2>Feedback</h2>
       <p>
         We are using speach recognition instruments to give you a feedback on your replies
       </p>
       <div class="lp-content__phone">
-
+        <span class="tip tip-1">listen to the audio</span>
+        <span class="tip tip-2">read the task</span>
+        <span class="tip tip-3">reply using keywords</span>
+        <span class="iphone"></span>
       </div>
     </div><!-- container -->
   </section><!-- lp-content -->
 
   <section class="lp-content lp-content--features">
     <div class="container clearfix">
-      <div class="feature">Cafe</div>
+      <p class="feature feature--comfort">Practice your English speaking skills anytime, anywhere</p>
+      <p class="feature feature--vr">Use VR extention to dive into the experience</p>
+      <p class="feature feature--savings">No need to spend time or money to get to language clubs or courses</p>
     </div><!-- container -->
   </section><!-- lp-content -->
+
+  <section class="lp-content lp-content--cta">
+    <h2>
+      Stop worrying <br>
+      Start speaking
+    </h2>
+    <a href="#" class="btn btn-primary btn-cta btn-cta--header">Try demo for free</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container clearfix">
+      <nav class="footer__nav footer__nav--lp">
+        <ul>
+          <!-- <li><a href="#">Demo</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">|</a></li> -->
+          <li><a href="mailto: hi@speakability.co">hi@speakability.co</a></li>
+          <!-- <li><a href="#">vk</a></li>
+          <li><a href="#">tl</a></li>
+          <li><a href="#">fb</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

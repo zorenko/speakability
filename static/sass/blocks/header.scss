@@ -16,15 +16,15 @@
       display: block;
       float: left;
       padding-left: 0;
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 500;
     }
   }
 
   &--lp {
     position: relative;
     overflow: hidden;
-    height: 80vh;
+    height: 70vh;
     background-image: url(images/pic/index.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -168,13 +168,15 @@
   }
 
   &__title {
-    font-size: 70px;
+    font-size: 48px;
+    color: $white;
   }
 
   &__subtitle {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: 200;
-    margin: 5px 0 50px;
+    margin: 5px 0 45px;
+    letter-spacing: 1.1px;
   }
 
   &__lang {
