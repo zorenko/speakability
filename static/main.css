@@ -186,7 +186,7 @@ input {
 .header--lp {
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 75vh;
   background-image: url(images/pic/index.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -595,7 +595,8 @@ input {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 60px; }
     .lp-content--intro p {
       font-family: "Podkova";
       font-size: 26px;
