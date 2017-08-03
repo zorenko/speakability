@@ -17,7 +17,7 @@
 }
 
 body {
-  background: $body-bg;
+  background: $bg;
   font-family: "Nunito", "Roboto", sans-serif;
   color: $text;
   font-weight: 300;
@@ -63,7 +63,7 @@ input, .btn {
 }
 
 input {
-  background: rgba($grey-light, .3);
+  background: rgba($strokes, .3);
   box-sizing: border-box;
 }
 
@@ -112,13 +112,21 @@ input {
 
 .link-back {
   padding-left: 20px;
-  position: relative;
+  position: fixed;
+  left: 20px;
+  top: 80px;
   font-weight: 500;
+  color: $grey;
+
+  &:hover {
+    color: $grey-hover;
+  }
 
   &::after {
     position: absolute;
     content: "";
-    top: 4.5px;
+    top: 50%;
+    margin-top: -7px;
     left: 0;
     width: 10px;
     height: 14px;
@@ -127,7 +135,7 @@ input {
   }
 
   &:hover::after {
-    opacity: .5;
+    opacity: .85;
   }
 }
 

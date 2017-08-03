@@ -27,7 +27,7 @@
     position: relative;
     overflow: hidden;
     height: 75vh;
-    background-image: url(images/pic/index.jpg);
+    background-image: url("images/pic/index.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,7 +198,7 @@
       display: block;
       width: 24px;
       height: 16px;
-      background: url(images/flag-usa.svg);
+      background: url("images/flag-usa.svg");
       background-size: 24px 16px;
       margin-left: 20px;
     }
