@@ -533,7 +533,7 @@ input {
 .task {
   width: 600px;
   position: absolute;
-  top: 100px;
+  top: 90px;
   left: 50%;
   margin-left: -300px; }
 
@@ -543,7 +543,7 @@ input {
   border-radius: 4px;
   background: #fff;
   margin: 0 auto; }
-  .bot__pic {
+  .bot__vid {
     min-height: 200px;
     background: url("images/bot-pic.png");
     background-position: center;
@@ -562,7 +562,7 @@ input {
     font-weight: 500;
     color: #000;
     margin: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .hints__words {
     padding-bottom: 40px;
     border-bottom: 1px solid #eceef1;
