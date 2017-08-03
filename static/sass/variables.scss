@@ -2,6 +2,8 @@ $white: #fff;
 $black: #000;
 $text: #B0BCC2;
 
+$body-bg: #f8f9fb;
+
 $primary: #328AFF;
 $primary-hover: rgba($primary, .85);
 
@@ -27,11 +29,9 @@ $grey-light: #ECF3F6; //for strokes
 $grey-text-dark: #5F5F5F;
 $grey-text-light: #B0B0B0;
 
-$body-bg: #f8f9fb;
-
 $gradient: linear-gradient(to right, #2280FD, #6AC0F9);
 $border: 1px solid $grey-light;
+$shadow: 0 2px 10px 0 $grey-light;
 
 $radius: 4px;
-$shadow: 0 2px 10px 0 $grey-light;
 $padding: 10px 15px;
