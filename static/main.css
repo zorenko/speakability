@@ -117,7 +117,8 @@ input {
 
 .link-back {
   padding-left: 20px;
-  position: relative; }
+  position: relative;
+  font-weight: 500; }
   .link-back::after {
     position: absolute;
     content: "";
@@ -167,21 +168,21 @@ input {
   .login__register {
     float: right; }
 
-.header__nav li {
-  display: block;
-  float: left; }
-
-.header__nav a {
-  display: block;
-  font-size: 15px;
-  font-weight: 300; }
-
-.header__nav .logo {
-  display: block;
-  float: left;
-  padding-left: 0;
-  font-size: 20px;
-  font-weight: 500; }
+.header__nav {
+  font-weight: 400; }
+  .header__nav li {
+    display: block;
+    float: left; }
+  .header__nav a {
+    display: block;
+    font-size: 15px;
+    font-weight: 300; }
+  .header__nav .logo {
+    display: block;
+    float: left;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 500; }
 
 .header--lp {
   position: relative;
@@ -272,7 +273,8 @@ input {
         padding: 10px 20px;
         background: #fff;
         font-size: 14px;
-        border-radius: 4px; }
+        border-radius: 4px;
+        font-weight: 400; }
     .header--app .menu::before {
       position: absolute;
       content: "";
@@ -531,11 +533,9 @@ input {
 .task {
   width: 600px;
   position: absolute;
-  top: 30px;
+  top: 100px;
   left: 50%;
-  -webkit-transition: translateX(-50%);
-  -o-transition: translateX(-50%);
-  transition: translateX(-50%); }
+  margin-left: -300px; }
 
 .bot {
   width: 100%;

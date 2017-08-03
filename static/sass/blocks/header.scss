@@ -1,6 +1,8 @@
 .header {
 
   &__nav {
+    font-weight: 400;
+
     li {
       display: block;
       float: left;
@@ -82,6 +84,7 @@
       float: right;
       padding: 15px;
       cursor: pointer;
+
     }
 
     .pic {
@@ -126,6 +129,7 @@
           background: $white;
           font-size: 14px;
           border-radius: $radius;
+          font-weight: 400;
         }
       }
 
