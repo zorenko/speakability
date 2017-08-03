@@ -110,29 +110,6 @@ input {
   }
 }
 
-.btn-mic {
-  display: block;
-  width: 55px;
-  height: 55px;
-  font-size: 0;
-  border-radius: 50%;
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 18px;
-    height: 25px;
-    background: url("images/mic.svg");
-    background-size: 18px 25px;
-    transform: translateX(-50%) translateY(-50%);
-  }
-}
-
 .link-back {
   padding-left: 20px;
   position: relative;

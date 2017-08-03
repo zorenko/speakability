@@ -93,28 +93,6 @@ input {
     padding: 20px 35px !important;
     letter-spacing: .5px; }
 
-.btn-mic {
-  display: block;
-  width: 55px;
-  height: 55px;
-  font-size: 0;
-  border-radius: 50%;
-  text-align: center;
-  margin: 0 auto;
-  position: relative; }
-  .btn-mic::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 18px;
-    height: 25px;
-    background: url("images/mic.svg");
-    background-size: 18px 25px;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); }
-
 .link-back {
   padding-left: 20px;
   position: relative;
@@ -563,7 +541,6 @@ input {
     margin-bottom: 20px; }
   .conversation__words {
     padding-bottom: 40px;
-    border-bottom: 1px solid #ECF3F6;
     font-weight: 300; }
     .conversation__words span {
       display: inline-block;
@@ -580,6 +557,55 @@ input {
         color: #B0B0B0; }
       .conversation__words li .btn {
         margin-top: 40px; }
+
+.reply {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: #fff; }
+  .reply__record {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -27px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .reply__record .btn-mic {
+      position: relative;
+      display: block;
+      width: 55px;
+      height: 55px;
+      font-size: 0;
+      border-radius: 50%;
+      margin: 0;
+      margin-right: 30px; }
+      .reply__record .btn-mic::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 25px;
+        background: url("images/mic.svg");
+        background-size: 18px 25px;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%); }
 
 .vocabulary {
   display: block;
