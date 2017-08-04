@@ -112,11 +112,12 @@ input {
 
 .link-back {
   padding-left: 20px;
-  position: fixed;
+  position: absolute;
   left: 20px;
   top: 80px;
   font-weight: 500;
   color: $grey;
+  opacity: .5;
 
   &:hover {
     color: $grey-hover;
@@ -142,9 +143,9 @@ input {
 
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 750px;
-  }
+  // .container {
+  //   max-width: 750px;
+  // }
 }
 
 @media (min-width: 992px) {
