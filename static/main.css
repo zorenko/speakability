@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700|Podkova:400,500,600,700");
 .clearfix::after {
   content: "";
   display: table;
@@ -15,12 +16,12 @@
 
 body {
   background: rgba(50, 138, 255, 0.02);
-  font-family: "Nunito", "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #7a899d;
   font-weight: 300; }
 
 h1, h2 {
-  font-family: "Podkova", "Nunito", "Roboto", serif;
+  font-family: "Podkova", "Nunito Sans", serif;
   margin: 0;
   line-height: 1;
   color: black; }
