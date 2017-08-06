@@ -879,6 +879,44 @@ input {
       color: #B0B8C2;
       font-weight: lighter; }
 
+.alert {
+  display: block;
+  position: absolute;
+  padding: 10px 20px;
+  padding-left: 65px;
+  border-radius: 4px;
+  width: 150px;
+  top: -130px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-shadow: 0 0 20px 0 rgba(137, 150, 168, 0.2);
+  box-shadow: 0 0 20px 0 rgba(137, 150, 168, 0.2);
+  font-weight: normal;
+  z-index: 20; }
+  .alert::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-size: 26px; }
+  .alert--success {
+    color: #A0D16A;
+    background: #f5faf0; }
+    .alert--success::after {
+      background-image: url("images/success.svg"); }
+  .alert--danger {
+    color: #FF5F4D;
+    background: #FFF8F6; }
+    .alert--danger::after {
+      background-image: url("images/danger.svg"); }
+
 @media (max-width: 768px) {
   .conversation__bot, .conversation__hints {
     width: 100%; }

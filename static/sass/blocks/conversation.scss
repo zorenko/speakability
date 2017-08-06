@@ -214,6 +214,51 @@
       color: $tertiary;
       font-weight: lighter;
     }
+
+  }
+}
+
+.alert {
+  display: block;
+  position: absolute;
+  padding: 10px 20px;
+  padding-left: 65px;
+  border-radius: $radius;
+  width: 150px;
+  top: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: $shadow;
+  font-weight: normal;
+  z-index: 20;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-size: 26px;
+  }
+
+  &--success {
+    color: $success;
+    background: #f5faf0;
+
+    &::after {
+      background-image: url("images/success.svg");
+    }
+  }
+
+  &--danger {
+    color: $danger;
+    background: #FFF8F6;
+
+    &::after {
+      background-image: url("images/danger.svg");
+    }
   }
 }
 
