@@ -40,13 +40,13 @@
     <section class="conversation clearfix">
       <section class="conversation__bot">
         <div class="conversation__vid">
-          <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/5SHNBFfdTZ0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+          <!-- <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/5SHNBFfdTZ0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div> -->
         </div>
-        <div class="conversation__player">
+        <div class="player">
           <button type="button" name="button" class="player__play"></button>
           <button type="button" name="button" class="player__showtext"></button>
-          <span class="player__sound"></span>
-          <span class="player__text">Good afternoon! Can I have your passport, please? Where would you like to sit?</span>
+          <div class="player__sound"></div>
+          <span class="player__text hidden">Good afternoon! Can I have your passport, please? Where would you like to sit?</span>
         </div>
       </section><!-- bot -->
 
@@ -73,7 +73,7 @@
     <a href="#" class="btn btn-primary btn-mic">Play</a>
     <div class="reply__record">
       <span class="text">record your reply</span>
-      <p class="text">Your reply</p>
+      <p class="text hidden">Your reply</p>
     </div>
 
   </section>

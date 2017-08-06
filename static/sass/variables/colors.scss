@@ -3,7 +3,7 @@ $black: #000;
 $white: #fff;
 
 $bg: #F6F7F9;
-$strokes: #e4eaec;
+$strokes: #ECF3F6;
 $transp-hover: rgba($strokes, .3);
 
 // blue
@@ -21,7 +21,7 @@ $gradient: linear-gradient(to right, $primary, #6AC0F9);
 $secondary: #8996A8;
 $secondary-hover: rgba($secondary, .85);
 
-$shadow-color: rgba($secondary, .3);
+$shadow-color: rgba($secondary, .2);
 
 // tertiary (grey)
 $tertiary: #B0B8C2;
