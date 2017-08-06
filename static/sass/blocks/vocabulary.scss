@@ -1,26 +1,19 @@
 .vocabulary {
   display: block;
-  width: 400px;
-  position: absolute;
-  top: 140px;
-  left: 50%;
-  margin-left: -200px;
-  padding-bottom: 50px;
+  background: $white;
+  border-radius: $radius;
+  border: $border;
 
   h1 {
-    text-align: center;
-    margin-bottom: 30px;
+    padding: 20px;
   }
 
   &__card {
     position: relative;
     display: block;
     width: 100%;
-    background: $white;
-    border-radius: $radius;
-    padding: 10px;
-    border: $border;
-    margin-bottom: 10px;
+    padding: 10px 0;
+    border-top: $border;
 
     .btn-sound {
       position: absolute;
@@ -41,22 +34,11 @@
       }
     }
 
-    .word,
-    .translation {
+    span {
       display: block;
       float: left;
       width: 100%;
-      padding-left: 50px;
-      font-weight: 400;
-    }
-
-    .word {
-      color: $black;
-      font-weight: 600;
-    }
-
-    .translation {
-      color: $secondary;
+      padding-left: 60px;
     }
   }
 }

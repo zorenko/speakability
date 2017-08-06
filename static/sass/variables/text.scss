@@ -10,6 +10,7 @@ h1, h2 {
 // APP Text Styles
 .h1, .h2, .h3 {
   font-family: "Podkova", "Nunito Sans", serif;
+  margin: 0;
 }
 
 .h1 {
@@ -25,7 +26,7 @@ h1, h2 {
 }
 
 .h3 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: normal;
   color: $tertiary;
 }
@@ -35,14 +36,17 @@ h1, h2 {
   font-size: 18px;
   font-weight: normal;
   color: $blue;
+  margin: 0;
 
   &-important {
     font-weight: bold;
     color: $black;
+    font-size: 20px;
   }
 
   &-secondary {
     color: $secondary;
     font-weight: lighter;
+    font-size: 14px;
   }
 }
