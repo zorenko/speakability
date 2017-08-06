@@ -19,19 +19,8 @@
 body {
   background: $bg;
   font-family: "Nunito Sans", sans-serif;
-  color: $text;
+  color: $blue;
   font-weight: 300;
-}
-
-h1, h2 {
-  font-family: "Podkova", "Nunito Sans", serif;
-  margin: 0;
-  line-height: 1;
-  color: $black;
-}
-
-main {
-  padding-top: 30px;
 }
 
 a {
@@ -116,11 +105,11 @@ input {
   left: 20px;
   top: 80px;
   font-weight: 500;
-  color: $grey;
+  color: $secondary;
   opacity: .5;
 
   &:hover {
-    color: $grey-hover;
+    color: $secondary-hover;
   }
 
   &::after {
@@ -140,12 +129,16 @@ input {
   }
 }
 
-
+@media (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+  }
+}
 
 @media (min-width: 768px) {
-  // .container {
-  //   max-width: 750px;
-  // }
+  .container {
+    max-width: 750px;
+  }
 }
 
 @media (min-width: 992px) {

@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700|Podkova:400,500,600,700');
+@import "variables/colors.scss";
+@import "variables/text.scss";
+@import "variables/variables.scss";
 
-@import "variables.scss";
 @import "general.scss";
-// @import "animation.scss";
 
 @import "blocks/login.scss";
 @import "blocks/header.scss";
+@import "blocks/breadcrumbs.scss";
 @import "blocks/footer.scss";
+
 @import "blocks/quests.scss";
 @import "blocks/quest.scss";
+@import "blocks/map.scss";
 @import "blocks/location.scss";
 @import "blocks/conversation.scss";
 @import "blocks/vocabulary.scss";

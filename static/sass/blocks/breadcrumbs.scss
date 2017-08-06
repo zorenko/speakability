@@ -1,0 +1,44 @@
+.breadcrumbs {
+  margin: 20px 0;
+
+  li {
+    display: inline-block;
+  }
+
+  &__link {
+    padding: 10px 15px;
+    font-weight: bold;
+    position: relative;
+    color: $link-small;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 0;
+      width: 10px;
+      height: 7px;
+      margin-top: -3px;
+      background: url("images/breadcrumbs.svg");
+      background-size: 10px 7px;
+    }
+
+    &--current {
+      cursor: default;
+      color: $link-disabled;
+      font-weight: normal;
+
+      &:hover {
+        color: $link-disabled;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,6 +1,5 @@
 .quests {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 20px 0 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -10,27 +9,27 @@
   &__title {
     flex-grow: 1;
     width: 100%;
-    font-weight: 400;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &--completed {
     padding-top: 30px;
-    border-top: 1px solid $strokes;
+    border-top: $border;
   }
 
 }
 
 @media (max-width: 768px) {
   .quests {
-    padding-top: 10px;
-
     &__title {
       text-align: center;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 21px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .quests {
+    padding: 30px 0 0;
   }
 }

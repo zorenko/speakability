@@ -1,0 +1,41 @@
+// COLORS
+$black: #000;
+$white: #fff;
+
+$bg: #F6F7F9;
+$strokes: #e4eaec;
+$transp-hover: rgba($strokes, .3);
+
+// blue
+$blue: #31353A;
+$gradient-dark: linear-gradient(to right, $blue, #47515E);
+$overlay: rgba($blue, .4);
+$overlay-hover: rgba($blue, .3);
+
+// primary
+$primary: #328AFF;
+$primary-hover: rgba($primary, .85);
+$gradient: linear-gradient(to right, $primary, #6AC0F9);
+
+// secondary (blue) for btns, text, tags
+$secondary: #8996A8;
+$secondary-hover: rgba($secondary, .85);
+
+$shadow-color: rgba($secondary, .3);
+
+// tertiary (grey)
+$tertiary: #B0B8C2;
+
+// text colors
+$link-small: #71859F;
+$link-disabled: #D5D5D5;
+
+// additional colors
+$success: #A0D16A;
+$success-hover: rgba($success, .85);
+
+$warning: #FFB94B;
+$warning-hover: rgba($warning, .85);
+
+$danger: #FF5F4D;
+$danger-hover: rgba($danger, .85);

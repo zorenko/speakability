@@ -9,21 +9,53 @@
 <body>
   <header class="header header--app">
     <div class="container clearfix">
-      <a href="#" class="header__logo">SpeakAbility</a>
-      <div class="header__profile">
-        <img src="static/images/profile-pic.svg" alt="profile-pic" class="header__pic"/>
-        <span class="header__name">Anastasia</span>
-        <ul class="header__menu">
-          <li><a href="#">Выйти</a></li>
+      <nav class="header__nav header__nav--app">
+        <ul class="float-left">
+          <li><a href="#" class="logo">SpeakAbility</a></li>
+          <!-- <li><a href="#">Demo</a></li>
+          <li><a href="#">About</a></li> -->
         </ul>
-      </div>
+        <ul class="float-right">
+          <li class="profile">
+            <span class="name">Anastasia</span>
+            <img src="static/images/profile-pic.svg" alt="profile-pic" class="pic"/>
+
+            <ul class="menu">
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header><!-- header -->
 
-  <a href="#" class="link-back">go back</a>
-
-
   <main class="container clearfix">
+    <div class="breadcrumbs">
+      <ul>
+        <li><a href="#" class="breadcrumbs__link">Dashboard</a></li>
+        <li><a class="breadcrumbs__link breadcrumbs__link--current">New York</a></li>
+      </ul>
+    </div>
+
+    <h1 class="h1">Choose one location</h1>
+
+    <section class="map">
+      <a href="#" class="map__location map__location--sightseeing">
+        <h3 class="map__title">Sightseeing</h3>
+      </a>
+
+      <a href="#" class="map__location map__location--cafe">
+        <h3 class="map__title">Cafe</h3>
+      </a>
+
+      <a href="#" class="map__location map__location--apartment">
+        <h3 class="map__title">Apartment</h3>
+      </a>
+
+      <a href="#" class="map__location map__location--airport">
+        <h3 class="map__title">Airport</h3>
+      </a>
+    </section>
 
   </main><!-- container -->
 
