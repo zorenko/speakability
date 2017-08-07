@@ -145,7 +145,7 @@
   background: $white;
   box-shadow: $shadow;
   border-top: $border;
-  z-index: 0;
+  z-index: 1;
 
   &::before,
   &::after {
@@ -225,12 +225,13 @@
   padding-left: 65px;
   border-radius: $radius;
   width: 150px;
-  top: -130px;
+  top: -140px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: $shadow;
   font-weight: normal;
-  z-index: 20;
+  z-index: 0;
+  animation: alert ease-out .2s;
 
   &::after {
     position: absolute;
@@ -260,6 +261,64 @@
       background-image: url("images/danger.svg");
     }
   }
+
+  @keyframes alert {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -140px;
+    }
+  }
+}
+
+.help {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $overlay;
+  z-index: 0;
+
+  &__popup {
+    position: fixed;
+    min-width: 200px;
+    max-width: 500px;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: $white;
+    border: $border;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    text-align: center;
+    padding: 30px 50px;
+
+    .h3 {
+      position: relative;
+      padding-top: 60px;
+      margin-bottom: 20px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("images/help.svg");
+        background-size: 50px;
+        background-position: center;
+      }
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -281,5 +340,9 @@
         font-size: 14px;
       }
     }
+  }
+
+  .help__popup {
+    padding: 20px 25px;
   }
 }

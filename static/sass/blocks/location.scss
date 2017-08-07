@@ -1,24 +1,66 @@
 .location {
-  position: absolute;
-  width: 500px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  text-align: center;
+  background: $white;
+  border: $border;
+  border-radius: $radius;
   box-sizing: border-box;
 
-  &__description {
-    margin-bottom: 40px;
-    font-size: 20px;
-    line-height: 1.4;
+  .h2 {
+    padding: 20px;
+    border-bottom: $border;
   }
 
-  .btn {
-    margin-right: 10px;
-    padding: 10px 35px;
+  &__description {
+    box-sizing: border-box;
+    text-align: center;
 
-    &:last-child {
-      margin-right: 0;
+    p {
+      margin: 0 auto;
+      margin-bottom: 30px;
     }
+
+    .btns {
+      display: flex;
+    }
+
+    .btn {
+      margin-right: 10px;
+      padding: 10px 35px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .location__description {
+    padding: 20px 30px;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .btns, .btn {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .location__description {
+    padding: 60px 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .location__description {
+    padding: 80px 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .location__description {
+    padding: 100px 250px;
   }
 }
