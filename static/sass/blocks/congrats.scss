@@ -1,0 +1,70 @@
+.congrats {
+  background: $white;
+  border: $border;
+  border-radius: $radius;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .h1 {
+    position: relative;
+    padding-top: 115px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 83px;
+      height: 95px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("images/star.svg");
+      background-size: 83px 95px;
+      background-position: center;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .congrats {
+    padding: 30px;
+
+    .h1, p {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .congrats {
+    padding: 40px;
+
+    .h1, p {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .congrats {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .congrats {
+    padding: 60px;
+  }
+}

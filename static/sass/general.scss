@@ -46,7 +46,6 @@ li {
 }
 
 input, .btn {
-  width: 100%;
   border-radius: $radius;
   outline: none;
   border: none;
@@ -55,6 +54,7 @@ input, .btn {
 }
 
 input {
+  width: 100%;
   background: rgba($strokes, .3);
   box-sizing: border-box;
 }
@@ -62,6 +62,7 @@ input {
 .btn {
   box-sizing: border-box;
   border: 2px solid transparent;
+  font-weight: normal;
 
   &:hover {
     color: $white;

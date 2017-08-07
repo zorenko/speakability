@@ -225,7 +225,7 @@
   padding-left: 65px;
   border-radius: $radius;
   width: 150px;
-  top: -140px;
+  top: -120px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: $shadow;
@@ -267,7 +267,7 @@
       top: 0;
     }
     100% {
-      top: -140px;
+      top: -120px;
     }
   }
 }
@@ -283,7 +283,7 @@
 
   &__popup {
     position: fixed;
-    min-width: 200px;
+    min-width: 300px;
     max-width: 500px;
     top: 40%;
     left: 50%;
@@ -343,6 +343,6 @@
   }
 
   .help__popup {
-    padding: 20px 25px;
+    padding: 30px 35px;
   }
 }
