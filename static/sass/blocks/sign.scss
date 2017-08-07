@@ -1,4 +1,4 @@
-.login {
+.sign {
   background: $white;
   border-radius: $radius;
   box-shadow: $shadow;
@@ -9,20 +9,15 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
-  padding: 20px 30px;
-  font-size: 14px;
+  padding: 25px 40px;
+  font-size: 16px;
 
   &__title {
-    margin: 0;
     margin-bottom: 20px;
     font-size: 20px;
   }
 
-  &__forgot {
-    float: left;
-  }
-
-  &__register {
-    float: right;
+  &__link {
+    padding: 10px;
   }
 }
