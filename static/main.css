@@ -209,11 +209,22 @@ input {
     font-size: 15px;
     font-weight: 300; }
   .header__nav .logo {
+    position: relative;
     display: block;
     float: left;
-    font-size: 18px;
-    font-weight: 900;
+    font-size: 0;
     margin-left: -20px; }
+    .header__nav .logo::after {
+      position: absolute;
+      content: "";
+      width: 168px;
+      height: 50px;
+      top: 0;
+      left: 0;
+      background-image: url("images/logo_white.svg");
+      background-size: 125px 20px;
+      background-position: center;
+      background-repeat: no-repeat; }
 
 .header--lp {
   position: relative;
