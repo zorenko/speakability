@@ -770,7 +770,9 @@ input {
     .location__description p {
       margin-bottom: 20px; }
     .location__description .btns, .location__description .btn {
-      display: block; } }
+      display: block; }
+    .location__description .btn {
+      margin-right: 0; } }
 
 @media (min-width: 768px) {
   .location__description {
@@ -788,7 +790,7 @@ input {
   border: 1px solid #ECF3F6;
   border-radius: 4px;
   background: #fff;
-  margin-bottom: 200px; }
+  margin-bottom: 150px; }
   .conversation__bot {
     width: 70%;
     float: left; }
