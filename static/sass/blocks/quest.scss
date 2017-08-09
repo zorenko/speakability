@@ -11,11 +11,29 @@
   cursor: pointer;
   box-sizing: border-box;
   background: rgba($secondary, .3);
-  background-image: url("images/pic/quest-ny.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
+
+  &--ny {
+    background-image: url("images/pic/quest-ny.jpg");
+  }
+  &--london {
+    background-image: url("images/pic/quest-london.jpg");
+  }
+  &--chicago {
+    background-image: url("images/pic/quest-chicago.jpg");
+  }
+  &--la {
+    background-image: url("images/pic/quest-la.jpg");
+  }
+  &--toronto {
+    background-image: url("images/pic/quest-toronto.jpg");
+  }
+  &--boston {
+    background-image: url("images/pic/quest-boston.jpg");
+  }
 
   &::after {
     position: absolute;
@@ -80,6 +98,7 @@
     background: rgba($white, .3);
     border-radius: 5px;
   }
+
   &__progress-bar {
     position: absolute;
     display: block;
@@ -121,7 +140,7 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
   .quest {
-    &:nth-child(2n) {
+    &:nth-of-type(2n) {
       margin-right: 0;
     }
     &:last-child {
@@ -134,7 +153,7 @@
   .quest {
     width: 310px;
 
-    &:nth-child(3n) {
+    &:nth-of-type(3n) {
       margin-right: 0;
     }
     &:last-child {

@@ -517,11 +517,22 @@ input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: rgba(137, 150, 168, 0.3);
-  background-image: url("images/pic/quest-ny.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0; }
+  .quest--ny {
+    background-image: url("images/pic/quest-ny.jpg"); }
+  .quest--london {
+    background-image: url("images/pic/quest-london.jpg"); }
+  .quest--chicago {
+    background-image: url("images/pic/quest-chicago.jpg"); }
+  .quest--la {
+    background-image: url("images/pic/quest-la.jpg"); }
+  .quest--toronto {
+    background-image: url("images/pic/quest-toronto.jpg"); }
+  .quest--boston {
+    background-image: url("images/pic/quest-boston.jpg"); }
   .quest::after {
     position: absolute;
     content: "";
@@ -602,7 +613,7 @@ input {
     width: 365px; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .quest:nth-child(2n) {
+  .quest:nth-of-type(2n) {
     margin-right: 0; }
   .quest:last-child {
     margin-right: auto; } }
@@ -610,7 +621,7 @@ input {
 @media (min-width: 992px) {
   .quest {
     width: 310px; }
-    .quest:nth-child(3n) {
+    .quest:nth-of-type(3n) {
       margin-right: 0; }
     .quest:last-child {
       margin-right: auto; } }
