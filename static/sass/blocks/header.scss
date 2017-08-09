@@ -228,6 +228,14 @@
       max-height: 500px;
     }
 
+    &__nav {
+      .logo {
+        &::after {
+          height: 43px;
+        }
+      }
+    }
+
     &__title {
       font-size: 34px;
     }
